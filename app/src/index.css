@@ -8,6 +8,10 @@
    BRAND THEME — Tailwind v4
    ============================================ */
 @theme {
+  --spacing: 0.25rem;
+}
+
+@theme inline {
   --color-bg-primary: #0A0E1A;
   --color-bg-secondary: #111827;
   --color-bg-card: #1A1F2E;
@@ -31,19 +35,14 @@
   --font-sans: 'Satoshi', system-ui, -apple-system, sans-serif;
   --font-display: 'Satoshi', system-ui, -apple-system, sans-serif;
   --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
-
-  --radius-lg: 8px;
-  --radius-xl: 12px;
-  --radius-2xl: 16px;
 }
 
 /* ============================================
    GLOBAL STYLES
    ============================================ */
+/* box-sizing reset only — Tailwind handles margin/padding via utilities */
 *, *::before, *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
