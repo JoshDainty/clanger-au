@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import {
-  Search, X, ChevronDown, ArrowLeft, Clock, ScrollText,
+  Search, X, ArrowLeft, Clock, ScrollText,
   TrendingUp, TrendingDown, Minus,
 } from 'lucide-react'
 import { PLAYERS, POSITIONS, type Position, type Player } from '@/lib/playerData'
@@ -30,7 +30,6 @@ const TEAMS = [
 ]
 const MY_TEAM_INDEX = 0
 const ROUNDS = 8
-const TOTAL_PICKS = TEAMS.length * ROUNDS
 const CURRENT_PICK = 15 // Round 2, Pick 5 (0-indexed: 14)
 const PICK_TIMER_SECONDS = 60
 

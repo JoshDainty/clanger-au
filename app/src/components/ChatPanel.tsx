@@ -93,7 +93,7 @@ export default function ChatPanel({ messages, onSend, placeholder = 'Type a mess
     setInput('')
   }
 
-  const handleReport = (id: string) => {
+  const handleReport = (_id: string) => {
     setToast('Message reported. Our team will review it.')
     setTimeout(() => setToast(''), 3000)
   }

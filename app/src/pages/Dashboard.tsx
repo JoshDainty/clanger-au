@@ -12,7 +12,7 @@ import {
   Clock,
   ArrowUpRight,
   ArrowDownRight,
-  Circle,
+
   Target,
   DollarSign,
   Star,

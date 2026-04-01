@@ -3,7 +3,7 @@
  * Navigate to /states-demo to view.
  */
 import { useState } from 'react'
-import { Trophy, Users, MessageSquare, Shirt, LayoutDashboard, Wallet } from 'lucide-react'
+import { Trophy, Users, Shirt, LayoutDashboard, Wallet } from 'lucide-react'
 import ErrorState from '@/components/ErrorState'
 import EmptyState from '@/components/EmptyState'
 import {
@@ -27,7 +27,7 @@ const DEMO_PAGES: { key: DemoPage; label: string; icon: typeof Trophy }[] = [
   { key: 'wallet', label: 'Wallet', icon: Wallet },
 ]
 
-const SKELETONS: Record<DemoPage, () => JSX.Element> = {
+const SKELETONS: Record<DemoPage, () => React.ReactNode> = {
   dashboard: DashboardSkeleton,
   contests: ContestsListSkeleton,
   players: PlayersListSkeleton,

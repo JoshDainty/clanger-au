@@ -146,7 +146,7 @@ export default function CourtView({ myPlayers, oppPlayers, intensity }: CourtVie
       label: event.label || animConfig.floatLabel,
       color: animConfig.floatColor,
       x, y,
-      sparkle: animConfig.sparkle && intensity === 'full',
+      sparkle: !!(animConfig.sparkle && intensity === 'full'),
     }])
 
     setTimeout(() => {
