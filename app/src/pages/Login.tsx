@@ -51,14 +51,14 @@ export default function Login() {
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/[0.04] rounded-full blur-3xl pointer-events-none" />
 
         {/* Content */}
-        <div className="relative z-10 p-10 pt-12">
+        <div className="relative z-10 px-12 xl:px-16 pt-12">
           <div className="flex items-center gap-1.5 mb-2">
             <span className="text-xl font-black text-text-primary tracking-tight">CLANGER</span>
             <span className="text-base font-bold text-text-tertiary">.au</span>
           </div>
         </div>
 
-        <div className="relative z-10 p-10 flex-1 flex flex-col justify-center">
+        <div className="relative z-10 px-12 xl:px-16 flex-1 flex flex-col justify-center">
           <h2 className="text-3xl xl:text-4xl font-black text-text-primary leading-[1.1] tracking-tight mb-3">
             Australia's Biggest & Best<br />
             <span className="bg-gradient-to-r from-accent to-purple-500 bg-clip-text text-transparent">Sports Fantasy Platform</span>
@@ -79,7 +79,7 @@ export default function Login() {
           </div>
         </div>
 
-        <div className="relative z-10 p-10 pb-8">
+        <div className="relative z-10 px-12 xl:px-16 pb-8">
           <div className="flex items-center gap-6 text-xs text-text-tertiary">
             <span>10,000+ Contests</span>
             <span className="w-1 h-1 bg-text-tertiary rounded-full" />
@@ -91,10 +91,10 @@ export default function Login() {
       </div>
 
       {/* Right panel — form */}
-      <div className="flex-1 flex items-center justify-center p-6">
-        <div className="w-full max-w-sm">
+      <div className="flex-1 flex items-center justify-center p-8 lg:p-12">
+        <div className="w-full max-w-md">
           {/* Mobile logo */}
-          <div className="lg:hidden text-center mb-10">
+          <div className="lg:hidden text-center mb-12">
             <div className="flex items-center justify-center gap-1.5 mb-3">
               <span className="text-2xl font-black text-text-primary tracking-tight">CLANGER</span>
               <span className="text-lg font-bold text-text-tertiary">.au</span>
@@ -102,9 +102,9 @@ export default function Login() {
             <p className="text-text-tertiary text-sm">Australia's #1 Fantasy Sports Platform</p>
           </div>
 
-          <div className="mb-7">
+          <div className="mb-8">
             <h1 className="text-2xl font-bold text-text-primary">Welcome back</h1>
-            <p className="text-text-secondary text-sm mt-1">Sign in to access your contests and leagues.</p>
+            <p className="text-text-secondary text-sm mt-2">Sign in to access your contests and leagues.</p>
           </div>
 
           {error && (
@@ -114,7 +114,7 @@ export default function Login() {
             </div>
           )}
 
-          <form className="space-y-4" onSubmit={handleSubmit}>
+          <form className="space-y-5" onSubmit={handleSubmit}>
             <div>
               <label className="block text-sm font-medium text-text-secondary mb-1.5">Email address</label>
               <input
