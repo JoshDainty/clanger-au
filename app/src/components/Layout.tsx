@@ -229,8 +229,8 @@ export default function Layout() {
       <Sidebar />
       <TopBar onSearchOpen={() => setSearchOpen(true)} />
 
-      <main className="pt-16 pb-[72px] lg:pb-0 lg:pl-60 min-h-svh">
-        <div className="p-4 lg:p-6 max-w-6xl page-enter" key={location.pathname}>
+      <main className="pt-24 pb-24 lg:pt-24 lg:pb-8 lg:pl-60 min-h-svh">
+        <div className="px-5 lg:px-10 max-w-[960px] page-enter" key={location.pathname}>
           <Outlet />
         </div>
       </main>

@@ -96,12 +96,12 @@ export default function Dashboard() {
   const displayName = user?.user_metadata?.display_name || user?.email?.split('@')[0] || 'Fantasy Fan'
 
   return (
-    <div className="space-y-6 pb-4">
+    <div className="space-y-8 pb-4">
 
       {/* ─── Welcome + Quick Actions ─── */}
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-bold text-text-primary">
+          <h1 className="text-3xl font-black text-text-primary tracking-tight">
             G'day, <span className="text-accent-light">{displayName}</span>
           </h1>
           <p className="text-text-secondary text-sm mt-1">3 active contests · 2 games live now</p>

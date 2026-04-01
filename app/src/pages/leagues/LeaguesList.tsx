@@ -24,10 +24,10 @@ const leagues: League[] = [
 
 export default function LeaguesList() {
   return (
-    <div className="space-y-5">
+    <div className="space-y-7">
       <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
         <div>
-          <h1 className="text-2xl font-bold text-text-primary">My Leagues</h1>
+          <h1 className="text-3xl font-black text-text-primary tracking-tight">My Leagues</h1>
           <p className="text-text-secondary text-sm mt-1">{leagues.length} leagues · {leagues.filter(l => l.status === 'active').length} active</p>
         </div>
         <Link

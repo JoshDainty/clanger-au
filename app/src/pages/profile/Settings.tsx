@@ -32,7 +32,7 @@ export default function ProfileSettings() {
         <ArrowLeft className="w-4 h-4" /> Profile
       </Link>
 
-      <h1 className="text-2xl font-bold text-text-primary">Settings</h1>
+      <h1 className="text-3xl font-black text-text-primary tracking-tight">Settings</h1>
 
       {/* Avatar + Name */}
       <div className="bg-bg-card border border-border rounded-xl p-5 space-y-5">

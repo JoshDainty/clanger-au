@@ -64,7 +64,7 @@ export default function LeagueDetail() {
   }
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-7">
       <Link to="/leagues" className="inline-flex items-center gap-2 text-sm text-text-tertiary hover:text-text-secondary transition-colors">
         <ArrowLeft className="w-4 h-4" /> My Leagues
       </Link>

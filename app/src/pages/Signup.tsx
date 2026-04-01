@@ -108,7 +108,7 @@ export default function Signup() {
               <span className="text-2xl font-black text-text-primary tracking-tight">CLANGER</span>
               <span className="text-lg font-bold text-text-tertiary">.au</span>
             </div>
-            <p className="text-text-tertiary text-sm">Your Court. Your Call.</p>
+            <p className="text-text-tertiary text-sm">Australia's #1 Fantasy Sports Platform</p>
           </div>
 
           <div className="mb-7">

@@ -40,7 +40,7 @@ export default function LeagueCreate() {
       </Link>
 
       <div>
-        <h1 className="text-2xl font-bold text-text-primary">Create a League</h1>
+        <h1 className="text-3xl font-black text-text-primary tracking-tight">Create a League</h1>
         <p className="text-text-secondary text-sm mt-1">Set up your own private or public league.</p>
       </div>
 

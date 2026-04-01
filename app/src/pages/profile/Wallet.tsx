@@ -43,7 +43,7 @@ export default function Wallet() {
         <ArrowLeft className="w-4 h-4" /> Profile
       </Link>
 
-      <h1 className="text-2xl font-bold text-text-primary">Wallet</h1>
+      <h1 className="text-3xl font-black text-text-primary tracking-tight">Wallet</h1>
 
       {/* Balance Card */}
       <div className="relative bg-gradient-to-br from-accent/15 via-bg-card to-purple-500/10 border border-accent/20 rounded-2xl p-6 overflow-hidden">

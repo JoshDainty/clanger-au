@@ -89,9 +89,9 @@ export default function PlayersList() {
   }
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-7">
       <div>
-        <h1 className="text-2xl font-bold text-text-primary">Players</h1>
+        <h1 className="text-3xl font-black text-text-primary tracking-tight">Players</h1>
         <p className="text-text-secondary text-sm mt-1">{PLAYERS.length} NBA players · 2025–26 season stats</p>
       </div>
 

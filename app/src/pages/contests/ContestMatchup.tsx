@@ -134,7 +134,7 @@ export default function ContestMatchup() {
   }))
 
   return (
-    <div className="space-y-5 pb-4">
+    <div className="space-y-7 pb-4">
       {/* Back */}
       <Link to="/contests" className="inline-flex items-center gap-2 text-sm text-text-tertiary hover:text-text-secondary transition-colors">
         <ArrowLeft className="w-4 h-4" /> Contests

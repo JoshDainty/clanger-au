@@ -55,7 +55,7 @@ export default function StatesDemo() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-text-primary">UI States Demo</h1>
+        <h1 className="text-3xl font-black text-text-primary tracking-tight">UI States Demo</h1>
         <p className="text-text-secondary text-sm mt-1">Preview loading, empty, and error states for every page.</p>
       </div>
 

@@ -60,11 +60,11 @@ export default function Login() {
 
         <div className="relative z-10 p-10 flex-1 flex flex-col justify-center">
           <h2 className="text-3xl xl:text-4xl font-black text-text-primary leading-[1.1] tracking-tight mb-3">
-            Your Court.<br />
-            <span className="bg-gradient-to-r from-accent to-purple-500 bg-clip-text text-transparent">Your Call.</span>
+            Australia's Biggest & Best<br />
+            <span className="bg-gradient-to-r from-accent to-purple-500 bg-clip-text text-transparent">Sports Fantasy Platform</span>
           </h2>
           <p className="text-text-secondary text-base mb-10 max-w-xs">
-            Australia's premium skill-based fantasy NBA contest platform.
+            Draft your squad. Compete in skill-based NBA contests. Win real prizes.
           </p>
 
           <div className="space-y-4">
@@ -99,7 +99,7 @@ export default function Login() {
               <span className="text-2xl font-black text-text-primary tracking-tight">CLANGER</span>
               <span className="text-lg font-bold text-text-tertiary">.au</span>
             </div>
-            <p className="text-text-tertiary text-sm">Your Court. Your Call.</p>
+            <p className="text-text-tertiary text-sm">Australia's #1 Fantasy Sports Platform</p>
           </div>
 
           <div className="mb-7">

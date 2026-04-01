@@ -8,7 +8,7 @@ export default function Notifications() {
     <div className="space-y-6 max-w-lg mx-auto">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold text-text-primary">Notifications</h1>
+          <h1 className="text-3xl font-black text-text-primary tracking-tight">Notifications</h1>
           <p className="text-text-secondary text-sm mt-1">Stay on top of contests, leagues, and results.</p>
         </div>
         <button className="flex items-center gap-2 px-3 py-2 text-xs text-text-secondary hover:text-accent-light transition-colors">
