@@ -12,12 +12,14 @@ import {
   Wallet,
   LogOut,
   X,
+  Newspaper,
 } from 'lucide-react'
 import { useAuth } from '@/lib/AuthContext'
 import { useState } from 'react'
 
 const mainNav = [
   { to: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
+  { to: '/feed', label: 'Feed', icon: Newspaper },
   { to: '/contests', label: 'Contests', icon: Trophy },
   { to: '/leagues', label: 'Leagues', icon: Users },
   { to: '/players', label: 'Players', icon: Shirt },

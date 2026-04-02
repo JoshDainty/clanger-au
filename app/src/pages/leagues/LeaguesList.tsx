@@ -32,7 +32,7 @@ export default function LeaguesList() {
         </div>
         <Link
           to="/leagues/create"
-          className="inline-flex items-center gap-2 h-10 px-4 bg-accent hover:bg-accent-dark text-white text-sm font-bold rounded-lg transition-all shadow-[0_0_20px_rgba(59,130,246,0.2)]"
+          className="inline-flex items-center gap-2 h-10 px-4 bg-accent hover:bg-accent-dark text-white text-sm font-bold rounded-lg transition-all shadow-[0_0_20px_rgba(236,72,153,0.2)]"
         >
           <Plus className="w-4 h-4" /> Create a League
         </Link>

@@ -112,7 +112,7 @@ export default function ContestsList() {
             onClick={() => setStatusTab(tab)}
             className={`relative px-4 py-2.5 rounded-lg text-sm font-medium transition-all min-h-[44px] flex items-center ${
               statusTab === tab
-                ? 'bg-accent text-white shadow-[0_0_12px_rgba(59,130,246,0.2)]'
+                ? 'bg-accent text-white shadow-[0_0_12px_rgba(236,72,153,0.2)]'
                 : 'text-text-secondary hover:text-text-primary'
             }`}
           >
@@ -328,7 +328,7 @@ export default function ContestsList() {
                     {contest.status === 'Upcoming' && (
                       <Link
                         to={`/contests/${contest.id}`}
-                        className="inline-flex items-center gap-1.5 h-9 px-4 bg-accent hover:bg-accent-dark text-white text-xs font-bold rounded-lg transition-all shadow-[0_0_16px_rgba(59,130,246,0.15)] hover:shadow-[0_0_24px_rgba(59,130,246,0.25)]"
+                        className="inline-flex items-center gap-1.5 h-9 px-4 bg-accent hover:bg-accent-dark text-white text-xs font-bold rounded-lg transition-all shadow-[0_0_16px_rgba(236,72,153,0.15)] hover:shadow-[0_0_24px_rgba(236,72,153,0.25)]"
                       >
                         {contest.entryFee === 0 ? 'Enter Free' : `Join · $${contest.entryFee}`}
                       </Link>

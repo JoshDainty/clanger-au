@@ -179,8 +179,8 @@ export default function CourtView({ myPlayers, oppPlayers, intensity }: CourtVie
       <svg viewBox="0 0 400 500" className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <radialGradient id="courtGlow" cx="50%" cy="40%" r="60%">
-            <stop offset="0%" stopColor="#3B82F6" stopOpacity="0.04" />
-            <stop offset="100%" stopColor="#3B82F6" stopOpacity="0" />
+            <stop offset="0%" stopColor="#EC4899" stopOpacity="0.04" />
+            <stop offset="100%" stopColor="#EC4899" stopOpacity="0" />
           </radialGradient>
         </defs>
 
@@ -189,39 +189,39 @@ export default function CourtView({ myPlayers, oppPlayers, intensity }: CourtVie
         <rect width="400" height="500" fill="url(#courtGlow)" rx="16" />
 
         {/* Court outline */}
-        <rect x="30" y="30" width="340" height="440" rx="4" fill="none" stroke="#3B82F6" strokeWidth="1.5" opacity="0.15" />
+        <rect x="30" y="30" width="340" height="440" rx="4" fill="none" stroke="#EC4899" strokeWidth="1.5" opacity="0.15" />
 
         {/* Half court line */}
-        <line x1="30" y1="250" x2="370" y2="250" stroke="#3B82F6" strokeWidth="1" opacity="0.12" />
+        <line x1="30" y1="250" x2="370" y2="250" stroke="#EC4899" strokeWidth="1" opacity="0.12" />
 
         {/* Center circle */}
-        <circle cx="200" cy="250" r="50" fill="none" stroke="#3B82F6" strokeWidth="1" opacity="0.12" />
-        <circle cx="200" cy="250" r="4" fill="#3B82F6" opacity="0.15" />
+        <circle cx="200" cy="250" r="50" fill="none" stroke="#EC4899" strokeWidth="1" opacity="0.12" />
+        <circle cx="200" cy="250" r="4" fill="#EC4899" opacity="0.15" />
 
         {/* Top key (paint area) */}
-        <rect x="130" y="30" width="140" height="140" rx="0" fill="none" stroke="#3B82F6" strokeWidth="1" opacity="0.1" />
+        <rect x="130" y="30" width="140" height="140" rx="0" fill="none" stroke="#EC4899" strokeWidth="1" opacity="0.1" />
         {/* Top free throw circle */}
-        <circle cx="200" cy="170" r="50" fill="none" stroke="#3B82F6" strokeWidth="1" opacity="0.08" strokeDasharray="4 4" />
+        <circle cx="200" cy="170" r="50" fill="none" stroke="#EC4899" strokeWidth="1" opacity="0.08" strokeDasharray="4 4" />
         {/* Top three-point arc */}
-        <path d="M 60 30 L 60 120 Q 60 250 200 250 Q 340 250 340 120 L 340 30" fill="none" stroke="#3B82F6" strokeWidth="1" opacity="0.1" />
+        <path d="M 60 30 L 60 120 Q 60 250 200 250 Q 340 250 340 120 L 340 30" fill="none" stroke="#EC4899" strokeWidth="1" opacity="0.1" />
         {/* Top rim */}
-        <circle cx="200" cy="60" r="8" fill="none" stroke="#3B82F6" strokeWidth="1.5" opacity="0.2" />
+        <circle cx="200" cy="60" r="8" fill="none" stroke="#EC4899" strokeWidth="1.5" opacity="0.2" />
         {/* Top backboard */}
-        <line x1="180" y1="45" x2="220" y2="45" stroke="#3B82F6" strokeWidth="2" opacity="0.15" />
+        <line x1="180" y1="45" x2="220" y2="45" stroke="#EC4899" strokeWidth="2" opacity="0.15" />
 
         {/* Bottom key */}
-        <rect x="130" y="330" width="140" height="140" rx="0" fill="none" stroke="#3B82F6" strokeWidth="1" opacity="0.1" />
+        <rect x="130" y="330" width="140" height="140" rx="0" fill="none" stroke="#EC4899" strokeWidth="1" opacity="0.1" />
         {/* Bottom free throw circle */}
-        <circle cx="200" cy="330" r="50" fill="none" stroke="#3B82F6" strokeWidth="1" opacity="0.08" strokeDasharray="4 4" />
+        <circle cx="200" cy="330" r="50" fill="none" stroke="#EC4899" strokeWidth="1" opacity="0.08" strokeDasharray="4 4" />
         {/* Bottom three-point arc */}
-        <path d="M 60 470 L 60 380 Q 60 250 200 250 Q 340 250 340 380 L 340 470" fill="none" stroke="#3B82F6" strokeWidth="1" opacity="0.1" />
+        <path d="M 60 470 L 60 380 Q 60 250 200 250 Q 340 250 340 380 L 340 470" fill="none" stroke="#EC4899" strokeWidth="1" opacity="0.1" />
         {/* Bottom rim */}
-        <circle cx="200" cy="440" r="8" fill="none" stroke="#3B82F6" strokeWidth="1.5" opacity="0.2" />
+        <circle cx="200" cy="440" r="8" fill="none" stroke="#EC4899" strokeWidth="1.5" opacity="0.2" />
         {/* Bottom backboard */}
-        <line x1="180" y1="455" x2="220" y2="455" stroke="#3B82F6" strokeWidth="2" opacity="0.15" />
+        <line x1="180" y1="455" x2="220" y2="455" stroke="#EC4899" strokeWidth="2" opacity="0.15" />
 
         {/* "MY TEAM" / "OPPONENT" labels */}
-        <text x="200" y="20" textAnchor="middle" fill="#3B82F6" fontSize="8" fontWeight="700" opacity="0.25" letterSpacing="3">YOUR TEAM</text>
+        <text x="200" y="20" textAnchor="middle" fill="#EC4899" fontSize="8" fontWeight="700" opacity="0.25" letterSpacing="3">YOUR TEAM</text>
         <text x="200" y="492" textAnchor="middle" fill="#EF4444" fontSize="8" fontWeight="700" opacity="0.2" letterSpacing="3">OPPONENT</text>
       </svg>
 
@@ -260,7 +260,7 @@ export default function CourtView({ myPlayers, oppPlayers, intensity }: CourtVie
                 <div
                   className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full"
                   style={{
-                    backgroundColor: player.isMine ? '#3B82F6' : '#EF4444',
+                    backgroundColor: player.isMine ? '#EC4899' : '#EF4444',
                     animation: 'court-pulse-live 2s ease-in-out infinite',
                   }}
                 />

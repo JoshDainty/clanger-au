@@ -241,7 +241,7 @@ export default function LeagueCreate() {
             else navigate('/leagues')
           }}
           disabled={!canProceed}
-          className="flex-1 h-11 bg-accent hover:bg-accent-dark disabled:opacity-40 disabled:cursor-not-allowed text-white text-sm font-bold rounded-xl transition-all shadow-[0_0_20px_rgba(59,130,246,0.2)] flex items-center justify-center gap-2"
+          className="flex-1 h-11 bg-accent hover:bg-accent-dark disabled:opacity-40 disabled:cursor-not-allowed text-white text-sm font-bold rounded-xl transition-all shadow-[0_0_20px_rgba(236,72,153,0.2)] flex items-center justify-center gap-2"
         >
           {step === 2 ? 'Create League' : 'Continue'} <ChevronRight className="w-4 h-4" />
         </button>

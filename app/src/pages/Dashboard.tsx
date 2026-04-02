@@ -109,7 +109,7 @@ export default function Dashboard() {
         <div className="flex items-center gap-2 flex-wrap">
           <Link
             to="/contests"
-            className="inline-flex items-center gap-2 h-10 px-4 bg-accent hover:bg-accent-dark text-white text-sm font-bold rounded-lg transition-all shadow-[0_0_20px_rgba(59,130,246,0.2)] hover:shadow-[0_0_28px_rgba(59,130,246,0.3)]"
+            className="inline-flex items-center gap-2 h-10 px-4 bg-accent hover:bg-accent-dark text-white text-sm font-bold rounded-lg transition-all shadow-[0_0_20px_rgba(236,72,153,0.2)] hover:shadow-[0_0_28px_rgba(236,72,153,0.3)]"
           >
             <Plus className="w-4 h-4" /> Join a Contest
           </Link>

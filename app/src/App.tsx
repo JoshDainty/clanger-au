@@ -24,6 +24,7 @@ import ProfileSettings from '@/pages/profile/Settings'
 import Wallet from '@/pages/profile/Wallet'
 import Chat from '@/pages/Chat'
 import Notifications from '@/pages/Notifications'
+import Feed from '@/pages/Feed'
 import StatesDemo from '@/pages/StatesDemo'
 
 export default function App() {
@@ -62,6 +63,7 @@ export default function App() {
             <Route path="/profile/settings" element={<ProfileSettings />} />
             <Route path="/profile/wallet" element={<Wallet />} />
 
+            <Route path="/feed" element={<Feed />} />
             <Route path="/chat" element={<Chat />} />
             <Route path="/notifications" element={<Notifications />} />
             <Route path="/states-demo" element={<StatesDemo />} />

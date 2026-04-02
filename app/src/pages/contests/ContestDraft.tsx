@@ -352,7 +352,7 @@ export default function ContestDraft() {
                       disabled={!isMyTurn}
                       className={`h-7 px-3 rounded-md text-[11px] font-bold transition-all ${
                         isMyTurn
-                          ? 'bg-accent hover:bg-accent-dark text-white shadow-[0_0_12px_rgba(59,130,246,0.2)] hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] cursor-pointer'
+                          ? 'bg-accent hover:bg-accent-dark text-white shadow-[0_0_12px_rgba(236,72,153,0.2)] hover:shadow-[0_0_20px_rgba(236,72,153,0.3)] cursor-pointer'
                           : 'bg-bg-elevated text-text-tertiary cursor-not-allowed'
                       }`}
                     >

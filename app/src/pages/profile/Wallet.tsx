@@ -54,7 +54,7 @@ export default function Wallet() {
             <span className="text-accent-light">$</span>{balance.toFixed(2)}
           </div>
           <div className="flex items-center gap-3">
-            <button className="flex items-center gap-2 h-10 px-5 bg-accent hover:bg-accent-dark text-white text-sm font-bold rounded-xl transition-colors shadow-[0_0_20px_rgba(59,130,246,0.2)]">
+            <button className="flex items-center gap-2 h-10 px-5 bg-accent hover:bg-accent-dark text-white text-sm font-bold rounded-xl transition-colors shadow-[0_0_20px_rgba(236,72,153,0.2)]">
               <Plus className="w-4 h-4" /> Deposit
             </button>
             <button className="flex items-center gap-2 h-10 px-5 bg-bg-card border border-border text-text-secondary text-sm font-medium rounded-xl hover:text-text-primary hover:border-accent/25 transition-colors">

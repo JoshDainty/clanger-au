@@ -47,7 +47,7 @@ export default function Login() {
         </div>
 
         {/* Ambient glow */}
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full blur-3xl pointer-events-none" style={{ background: 'rgba(59,130,246,0.04)' }} />
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full blur-3xl pointer-events-none" style={{ background: 'rgba(236,72,153,0.04)' }} />
 
         {/* Logo */}
         <div className="relative z-10 pt-10 pl-12">
@@ -60,7 +60,7 @@ export default function Login() {
           <h2 className="text-4xl font-black text-text-primary leading-tight tracking-tight mb-4">
             Australia's Biggest & Best
             <br />
-            <span className="bg-gradient-to-r from-accent to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-pink-400 to-rose-500 bg-clip-text text-transparent">
               Sports Fantasy Platform
             </span>
           </h2>
@@ -70,7 +70,7 @@ export default function Login() {
           <div className="space-y-5">
             {features.map((f) => (
               <div key={f.text} className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 border" style={{ background: 'rgba(59,130,246,0.08)', borderColor: 'rgba(59,130,246,0.15)' }}>
+                <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 border" style={{ background: 'rgba(236,72,153,0.08)', borderColor: 'rgba(236,72,153,0.15)' }}>
                   <f.icon className="w-4.5 h-4.5 text-accent-light" />
                 </div>
                 <span className="text-sm text-text-secondary">{f.text}</span>
@@ -159,7 +159,7 @@ export default function Login() {
               type="submit"
               disabled={loading}
               className="w-full h-12 bg-accent hover:bg-accent-dark disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold text-sm rounded-xl transition-all"
-              style={{ boxShadow: '0 0 24px rgba(59,130,246,0.25)' }}
+              style={{ boxShadow: '0 0 24px rgba(236,72,153,0.25)' }}
             >
               {loading ? (
                 <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin mx-auto" />
@@ -169,7 +169,18 @@ export default function Login() {
             </button>
           </form>
 
-          <p className="text-center text-sm text-text-tertiary mt-10">
+          {/* Dev demo login */}
+          {import.meta.env.DEV && (
+            <button
+              type="button"
+              onClick={() => { setEmail('demo@clanger.au'); setPassword('demo1234'); }}
+              className="w-full mt-6 h-10 border border-dashed border-text-tertiary rounded-xl text-xs text-text-tertiary hover:text-text-secondary hover:border-text-secondary transition-colors"
+            >
+              Fill demo credentials (demo@clanger.au / demo1234)
+            </button>
+          )}
+
+          <p className="text-center text-sm text-text-tertiary mt-6">
             Don't have an account?{' '}
             <Link to="/signup" className="text-accent hover:text-accent-light font-semibold transition-colors">
               Create one free
