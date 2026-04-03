@@ -1,0 +1,6 @@
+node_modules/
+temporary_screenshots/
+.DS_Store
+.env.local
+app/node_modules/
+app/.env.local

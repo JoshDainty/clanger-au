@@ -1,0 +1,209 @@
+@import "tailwindcss";
+
+/* Font imports */
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* ============================================
+   BRAND THEME — Tailwind v4
+   ============================================ */
+@theme {
+  --spacing: 0.25rem;
+}
+
+@theme inline {
+  --color-bg-primary: #120A14;
+  --color-bg-secondary: #1A1020;
+  --color-bg-card: #241A2E;
+  --color-bg-elevated: #2E2138;
+
+  --color-accent: #EC4899;
+  --color-accent-light: #F472B6;
+  --color-accent-dark: #DB2777;
+
+  --color-success: #10B981;
+  --color-danger: #EF4444;
+  --color-warning: #F59E0B;
+
+  --color-text-primary: #FDF2F8;
+  --color-text-secondary: #B8A0B0;
+  --color-text-tertiary: #7A6078;
+
+  --color-border: #2D1F37;
+  --color-border-light: #251A2E;
+
+  --font-sans: 'Satoshi', system-ui, -apple-system, sans-serif;
+  --font-display: 'Satoshi', system-ui, -apple-system, sans-serif;
+  --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+/* box-sizing reset only — Tailwind handles margin/padding via utilities */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-tertiary);
+}
+
+/* ============================================
+   SKELETON LOADING
+   ============================================ */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--color-bg-card) 25%,
+    var(--color-bg-elevated) 50%,
+    var(--color-bg-card) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+  border-radius: var(--radius-lg);
+}
+
+/* ============================================
+   PAGE TRANSITIONS
+   ============================================ */
+@keyframes page-enter {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page-enter {
+  animation: page-enter 0.2s ease-out;
+}
+
+/* ============================================
+   TOAST NOTIFICATIONS
+   ============================================ */
+@keyframes toast-in {
+  from { opacity: 0; transform: translateX(100%) scale(0.95); }
+  to { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+@keyframes toast-out {
+  from { opacity: 1; transform: translateX(0) scale(1); }
+  to { opacity: 0; transform: translateX(100%) scale(0.95); }
+}
+
+.toast-enter { animation: toast-in 0.25s ease-out forwards; }
+.toast-exit { animation: toast-out 0.2s ease-in forwards; }
+
+/* ============================================
+   MODAL / OVERLAY
+   ============================================ */
+@keyframes overlay-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modal-in {
+  from { opacity: 0; transform: scale(0.96) translateY(8px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.overlay-enter { animation: overlay-in 0.2s ease-out; }
+.modal-enter { animation: modal-in 0.25s ease-out; }
+
+/* ============================================
+   SCORE FLASH ANIMATIONS
+   ============================================ */
+@keyframes flash-green {
+  0% { background-color: rgba(16, 185, 129, 0.15); }
+  100% { background-color: transparent; }
+}
+
+@keyframes flash-red {
+  0% { background-color: rgba(239, 68, 68, 0.15); }
+  100% { background-color: transparent; }
+}
+
+.flash-positive { animation: flash-green 0.3s ease-out; }
+.flash-negative { animation: flash-red 0.3s ease-out; }
+
+/* ============================================
+   TIMER PULSE (under 10 seconds)
+   ============================================ */
+@keyframes timer-critical {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+  50% { box-shadow: 0 0 12px 4px rgba(239, 68, 68, 0.2); }
+}
+
+.timer-critical {
+  animation: timer-critical 1s ease-in-out infinite;
+}
+
+/* ============================================
+   INTERACTIVE ELEMENT DEFAULTS
+   ============================================ */
+
+/* Consistent button lift on hover */
+button, a, [role="button"] {
+  transition-property: color, background-color, border-color, box-shadow, transform, opacity;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-out;
+}
+
+/* Tab indicator slide */
+@keyframes tab-slide {
+  from { transform: scaleX(0.8); opacity: 0.7; }
+  to { transform: scaleX(1); opacity: 1; }
+}
+
+.tab-active {
+  animation: tab-slide 0.15s ease-out;
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .skeleton { animation: none; }
+}
